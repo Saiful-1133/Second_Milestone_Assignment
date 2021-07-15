@@ -8,20 +8,35 @@ body {
 }
 
 .flex-container{
-    background-color: rgb(4, 0, 255);
-    display: flex;
-    margin-bottom: 50px;
+    background-color: navy;
+    display: flex; 
+    padding-top: 1o0px;
+    padding-bottom: 120px;
+    padding-left: 120px;
    
 }
-.div-width{
+h2{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    
+}
+.flex-container:hover .intro img {
+    transform: scale(1.3);
+    transition: transform 1.5s ease-out;   
+}
+
+.intro{
     width: 50%;
     height: 250px;
     padding: 50px 20px;
     margin: 40px;
 }
 
-.div-width img{
-    width: 70%;
+
+.intro img{
+    width: 90%;
     padding-bottom: 30px;
     margin-left: 40px;
 }
@@ -43,17 +58,15 @@ body {
     margin-bottom: 50px;
 }
 
-.food-pic img{
-    width: 300px;
+.player-pic img{
+    width: 330px;
     height: 256px;
 }
 .players-info { 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 15px;
-   
-    
-   
+    padding-top: 40px;
 
 }
 
@@ -65,7 +78,35 @@ body {
     left: 180px;
     top: 747px;
     background-color:white;
+    box-shadow: 5px 10px 8px #888888;
     
+}
+
+.bl{
+    color:blue;
+    font-size: 3em;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 50px;
+
+}
+.blog {
+    display: flex;
+    border: 1px solid black;
+}
+
+
+.blog img{
+    width: 150px;
+    height: 150px;
+    /* border: 15px solid wheat; */
+    
+}
+.des{
+    padding-left: 20px;
 }
 
 .album-sec{
@@ -100,6 +141,60 @@ h1{
 .photo-frame img{
     width: 100%;
     border: 5px solid white;
+}
+
+footer{
+    background-color: white);
+}
+
+.logo img{
+    display: block;
+    margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  width: 30%;
+}
+
+.social-icon{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 6%;
+}
+.copyright{
+    text-align: center;
+}
+
+/* -----------------------
+     Media  Queries
+--------------------------- */
+
+/* ----Mobile Devices----- */
+@media only screen and (max-width:688px) {
+    .flex-container{
+        width: 100%;
+    }
+    .intro img{
+        width: 90%;
+    }
+    .flex-container:hover .intro img {
+        transform: scale(1.5);
+        transition: transform 1.5s ease-out;   
+    }
+    
+    .players-info {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+
+    
+}
+
     
 
 
