@@ -1,0 +1,106 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* utilities */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.flex-container{
+    background-color: rgb(4, 0, 255);
+    display: flex;
+    margin-bottom: 50px;
+   
+}
+.div-width{
+    width: 50%;
+    height: 250px;
+    padding: 50px 20px;
+    margin: 40px;
+}
+
+.div-width img{
+    width: 70%;
+    padding-bottom: 30px;
+    margin-left: 40px;
+}
+
+.link{
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Times New Roman';
+    font-size: smaller;
+    background-color: brown;
+    padding: 5px 10px;
+    margin: 100px 0;
+}
+
+.grid-sec{
+    background-color: rgb(224, 224, 224);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.food-pic img{
+    width: 300px;
+    height: 256px;
+}
+.players-info { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+   
+    
+   
+
+}
+
+.player{
+    
+    padding: 15px;
+    width: 330px;
+    height: 474px;
+    left: 180px;
+    top: 747px;
+    background-color:white;
+    
+}
+
+.album-sec{
+    background-color: navy;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    font-weight: 700px;
+    
+}
+
+.photo-album{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center; 
+    padding-left: 50px;
+
+}
+
+.photo-frame{
+    width: 150px;
+    height:200px;
+    
+    
+
+    
+}
+.photo-frame img{
+    width: 100%;
+    border: 5px solid white;
+    
+
+
+    
